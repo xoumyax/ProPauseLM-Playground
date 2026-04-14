@@ -147,3 +147,38 @@ If you find our work useful, please cite:
 }
 ```
 If you have any questions, you can contact [Rulin Shao](https://rulinshao.github.io/), [Akari Asai](https://akariasai.github.io/), [Shannon Shen](https://www.szj.io/), and [Hamish Ivison](https://ivison.id.au/) or open a github issue. 
+
+## running it on hprc:
+login and go to dr-tulu-sparse/agent
+srun -p gpu --nodes=1 --ntasks=1 --cpus-per-task=16 --mem=120G --gres=gpu:a100:2 --time=04:00:00 --pty bash
+nvidia-smi
+conda activate dr_agent
+module load WebProxy/0000
+export HF_HOME=$SCRATCH/hf_home
+export HUGGINGFACE_HUB_CACHE=$SCRATCH/hf_cache
+export TRANSFORMERS_CACHE=$SCRATCH/hf_cache
+export XDG_CACHE_HOME=$SCRATCH/xdg_cache
+CUDA_VISIBLE_DEVICES=0 vllm serve rl-research/DR-Tulu-8B \
+  --port 30001 \
+  --dtype auto \
+  --max-model-len 40960 \
+  --download-dir $SCRATCH/hf_cache
+
+
+open another terminal and login to the same node: check the 'gxx' besides the user name to know which node you are at
+ssh gxx
+go into the relevant directory and activate the environment
+set web proxy:
+export http_proxy=http://10.73.132.63:8080
+export https_proxy=http://10.73.132.63:8080
+export HTTP_PROXY=$http_proxy
+export HTTPS_PROXY=$https_proxy
+export ALL_PROXY=$http_proxy
+export no_proxy=localhost,127.0.0.1
+export NO_PROXY=localhost,127.0.0.1
+
+python workflows/auto_search_sft.py serve --port 8080
+
+ open another terminal and type: ssh -L 8080:g072:8080 cyberwenyi2357@grace.hprc.tamu.edu
+ 
+
