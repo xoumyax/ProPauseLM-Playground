@@ -31,8 +31,12 @@ from rich.panel import Panel
 from rich.prompt import Confirm
 from rich.table import Table
 
-# Make sure the .env file is in the root directory of the project rl-rag-mcp/.env
-dotenv.load_dotenv(Path(__file__).parent.parent.parent / ".env")
+# Load env from agent/.env (this file lives in agent/workflows/). Optional repo-root .env
+# is loaded first for legacy setups; agent/.env overrides on duplicate keys.
+_agent_dir = Path(__file__).resolve().parent.parent
+_repo_root = _agent_dir.parent
+dotenv.load_dotenv(_repo_root / ".env")
+dotenv.load_dotenv(_agent_dir / ".env", override=True)
 
 
 @dataclass
@@ -91,39 +95,6 @@ class SearchAgent(BaseAgent):
         PROMPT = UNIFIED_TOOL_CALLING_STRUCTURED_PROMPTS[self.prompt_version]
         system_prompt = PROMPT["system_prompt"]
 
-        if dataset_name in [
-            "2wiki",
-            "simpleqa",
-            "browsecomp",
-            "bc_synthetic_depth_one_v2_verified",
-            "bc_synthetic_varied_depth_o3_verified",
-            "webwalker",
-            "hle",
-            "dsqa",
-        ]:
-            instruction_field_name = "exact_answer"
-        elif dataset_name in ["sqav2", "genetic_diseases_qa"]:
-            instruction_field_name = "long_form"
-        elif dataset_name in ["healthbench", "deep_research_bench", "researchqa"]:
-            instruction_field_name = "short_form"
-        elif dataset_name and "sft-mix" in dataset_name:
-            if "short_form" in dataset_name:
-                instruction_field_name = "exact_answer"
-            elif "long_form" in dataset_name:
-                instruction_field_name = "long_form"  # or "short_form"?
-            else:
-                raise ValueError(
-                    f"Unclear which instruction field name to use for the sft mix dataset: {dataset_name}"
-                )
-        else:
-            if "short_form" in str(dataset_name):
-                instruction_field_name = "exact_answer"
-            elif "long_form" in str(dataset_name):
-                instruction_field_name = "long_form"
-            else:
-                print("set additional instructions none")
-                instruction_field_name = None
-
         messages = [
             {
                 "role": "system",
@@ -137,13 +108,7 @@ class SearchAgent(BaseAgent):
         messages.append(
             {
                 "role": "user",
-                "content": (
-                    question
-                    + "\n\n"
-                    + PROMPT["additional_instructions"][instruction_field_name]
-                    if instruction_field_name is not None
-                    else question
-                ),
+                "content": question,
             }
         )
 
@@ -175,21 +140,20 @@ class AnswerAgent(BaseAgent):
     def prompt(self, question: str, history: str, dataset_name: str) -> str:
 
         PROMPT = UNIFIED_TOOL_CALLING_STRUCTURED_PROMPTS[self.prompt_version]
-        if dataset_name in [
-            "2wiki",
-            "simpleqa",
-            "browsecomp",
-            "bc_synthetic_depth_one_v2_verified",
-            "bc_synthetic_varied_depth_o3_verified",
-            "webwalker",
-            "webshaper",
-        ]:
-            instruction_field_name = "exact_answer"
-        elif dataset_name in ["sqav2", "genetic_diseases_qa"]:
-            instruction_field_name = "long_form"
-        elif dataset_name in ["healthbench", "deep_research_bench", "researchqa"]:
-            instruction_field_name = "short_form"
-        else:
+        _answer_datasets = (
+            {
+                "2wiki",
+                "simpleqa",
+                "browsecomp",
+                "bc_synthetic_depth_one_v2_verified",
+                "bc_synthetic_varied_depth_o3_verified",
+                "webwalker",
+                "webshaper",
+            }
+            | {"sqav2", "genetic_diseases_qa"}
+            | {"healthbench", "deep_research_bench", "researchqa"}
+        )
+        if dataset_name not in _answer_datasets:
             raise ValueError(f"Invalid dataset name: {dataset_name}")
 
         return [
@@ -199,9 +163,7 @@ class AnswerAgent(BaseAgent):
             },
             {
                 "role": "user",
-                "content": question
-                + "\n\n"
-                + PROMPT["additional_instructions"][instruction_field_name],
+                "content": question,
             },
             {
                 "role": "assistant",
@@ -705,7 +667,6 @@ class AutoReasonSearchWorkflow(BaseWorkflow):
             question=problem,
             history=results.generated_text,
             dataset_name=dataset_name,
-            additional_instructions="Now please generate an based on the search results by far:",
             generation_prefix="<answer>",
             max_tokens=cfg.search_agent_max_tokens,
             temperature=cfg.search_agent_temperature,
