@@ -36,7 +36,7 @@ Below we assume you are already in the `agent` directory.
 3. Launch the `autosearch` workflow: 
     - For simple debugging purpose, you can directly launch the service without any GPUs using openai models (this requires setting the `OPENAI_API_KEY`)
       ```bash
-      export OPENAI_API_KEY="sk-xxx"
+      export OPENAI_API_KEY="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"
 
       python workflows/auto_search_sft.py serve --port 8080 --config workflows/auto_search_sft-oai.yaml
       ```
