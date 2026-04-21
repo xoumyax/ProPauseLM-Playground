@@ -1,4 +1,5 @@
 agent/evaluation/**/data/
+agent/llm_responses.jsonl
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
