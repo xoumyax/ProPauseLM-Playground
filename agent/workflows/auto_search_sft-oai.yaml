@@ -9,7 +9,7 @@ search_agent_max_tool_calls: 5
 
 # Client config for the browse/reader agent (general model)
 use_browse_agent: false
-browse_agent_model_name: "gpt-4.1-2025-04-14" # Keep consistent with search model.
+browse_agent_model_name: "gpt-4.1-2025-04-14" # This should be the same name when you launch the VLLM backend.
 browse_agent_api_key: ${oc.env:OPENAI_API_KEY}
 browse_agent_max_tokens: 32000
 browse_agent_temperature: 1 # GPT-5 does not support temperature
