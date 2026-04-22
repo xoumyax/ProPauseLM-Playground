@@ -221,7 +221,7 @@ class LLMToolClient:
     def _append_response_log_json(self, user_prompt: str, gpt_response: str) -> None:
         """Append one record to a JSONL file if ``LLM_RESPONSE_LOG_JSON`` is set.
 
-        Each line is one JSON object including ``gpt_response`` and ``NofTokens``
+        Each line is one JSON object including ``gpt_response`` and ``number_of_tokens``
         (token count for that response, via :meth:`_count_tokens`).
         """
         path = os.environ.get("LLM_RESPONSE_LOG_JSON", "").strip()
@@ -230,7 +230,7 @@ class LLMToolClient:
         record = {
             "user_prompt": user_prompt,
             "gpt_response": gpt_response,
-            "NofTokens": self._count_tokens(gpt_response),
+            "number_of_tokens": self._count_tokens(gpt_response),
         }
         try:
             with open(path, "a", encoding="utf-8") as f:

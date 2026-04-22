@@ -1,34 +1,47 @@
-{"query":"I want to know about the latest progress in disambiguating user query","type":"vague","clarified_query":"I want to know about the latest progress in conversational agent's capability of disambiguating user query","final_response":"Recent progress in conversational agents’ ability to disambiguate user queries has been driven by several key trends:
+{
+  "query": "I want to know about the latest progress in disambiguating user query",
+  "type": "vague",
+  "clarified_query": "I want to know about the latest progress in conversational agent's capability of disambiguating user query",
+  "number_of_tokens": "4089",
+  "gpt_response": "In recent years, conversational agents have made significant advances in disambiguating user queries by leveraging new architectures, large language models, and interactive clarification strategies:
 
-1. Agentic Orchestration and Simulation-based Techniques: Conversational agents are now being developed with more advanced orchestration strategies—meaning they can dynamically manage multiple skills and reasoning pathways—and with reinforcement or reward-driven simulations to better handle ambiguous queries. This is a noted emerging trend in the latest research, reflecting a shift toward agents that can adaptively clarify and resolve uncertainties in conversation<cite id="94051eb2-0">The next wave of disambiguation in Conversational QA is being shaped by three emerging trends: agentic orchestration, simulation- and reward- ...</cite>.
+1. **LLM-Enabled Disambiguation**: Modern conversational agents incorporate large language models (LLMs), which provide improved contextual understanding and rewrites of ambiguous queries. These models can transform ambiguous user utterances into more precise, stand-alone questions, thereby clarifying intent .[11, 26]
 
-2. Use of Large Language Models (LLMs): Modern agents increasingly leverage large language models to interpret context and history, resulting in superior ambiguity resolution compared to older, rule-based bots. These LLM-based systems can refer back to prior dialogue turns, recognize ambiguous phrasing, and proactively ask follow-up questions to clarify intent. Recent surveys provide a comprehensive review of these advancements and highlight how LLMs are contributing to both understanding and handling ambiguous queries<cite id="94051eb2-8">By offering a comprehensive review of current research on ambiguities and disambiguation with LLMs...</cite>.
+2. **Interactive Clarification and Multi-Agent Approaches**: New frameworks, such as the Multi-Agent Clarification (MAC) system, actively detect ambiguity and engage the user with targeted clarifying questions during the conversation. This helps ensure tasks can be completed accurately, even when users provide underspecified requests .[22, 23, 27] Recent agents, like ProductAgent, are specifically designed to detect ambiguity (e.g., during product search), and proactively ask the user to clarify before proceeding .[24]
 
-3. Clarification Dialogues: A practical approach utilized in current systems is to prompt the user for clarification when multiple intents or interpretations are detected with similar confidence. Disambiguation dialogs are now more refined, often triggered when the agent cannot reliably match a user input to a single intent, leading to smoother and more accurate interactions<cite id="94051eb2-3">A disambiguation dialog is triggered when the bot matches the consumer's message to multiple intents with a Fair Plus score.</cite>.
+3. **Hierarchical and Interactive Disambiguation UIs**: Advanced systems (e.g., AmbigChat) use a hierarchical approach to query disambiguation, generating interactive UI widgets or guided follow-up questions that help users resolve ambiguity step by step within the conversational context .[25]
 
-4. Enhanced Contextual Awareness: Ongoing research emphasizes the importance of using conversation context (including time and long-range dialogue history) to disambiguate queries that would otherwise be unclear, especially in longer or more complex dialogues<cite id="94051eb2-6">...effective retrieval from long-form conversational data faces two unique problems compared to static database retrieval.</cite>.
+4. **Intent Disambiguation in Deployed Systems**: Platforms like AWS Lex have introduced Generative Intent Disambiguation, which allows agents to recognize when multiple intents could match a user's query and to prompt the user for additional information or clarification, significantly improving real-world application performance .[19, 28]
 
-In summary, the field has seen marked improvements in disambiguation through the adoption of more context-aware, dynamically orchestrated, and LLM-based methods, along with a greater emphasis on user-centered clarification strategies in dialogue management<cite id="94051eb2-0"></cite><cite id="94051eb2-8"></cite><cite id="94051eb2-3"></cite><cite id="94051eb2-6"></cite>."}
+5. **Ongoing Challenges and Analysis**: Studies and surveys remain active areas of research, defining key terms, categorizing techniques enabled by LLMs, and emphasizing the importance of user-centric clarification protocols to reduce errors and enhance conversational quality .[26, 13]
 
-{"query":"Please identify the current research gap in LLM personalization","type":"vague","clarified_query":"From a technical perspective, please identify the problems of current LLMs in personalizing its responses","final_response":"From a technical perspective, current Large Language Models (LLMs) face several critical challenges in personalizing their responses to individual users:
+In summary, the latest progress centers around leveraging advanced language models, interactive clarification dialogs (sometimes with explicit UI guidance), and robust intent disambiguation frameworks, leading to conversational agents that are far better at understanding and resolving vague or ambiguous user queries than earlier generations. "
+}
 
-1. **Lack of Individualized User Modeling**: Most current preference-tuning approaches treat user preferences as a monolith—meaning LLMs are generally tuned to a broad set of average preferences, not to the unique traits of each user. This results in responses that often do not reflect individual-specific nuancesCurrent preference-tuning practices treat user preferences as a monolith and tune. LLMs to one large set of preferences. However, not all users have the ...[2].
+{
+  "query": "Please identify the current research gap in LLM personalization",
+  "type": "vague",
+  "clarified_query": "From a technical perspective, please identify the problems of current LLMs in personalizing its responses",
+  "number_of_tokens": "2807",
+  "final_response": "Current LLMs face several technical problems when personalizing responses:
 
-2. **Prompting and Context Limitations**: Attempts to inject personalized information at the prompting/input level often struggle because of the context window limitations and the difficulty of consistently including all relevant personal data in promptsThis survey reviews recent advancements in PLLMs from three technical perspectives: prompting for personalized context (input level), finetuning ...[1].
+1. **Overfitting and Sycophancy:** When models are fine-tuned with limited user data, they tend to overfit, becoming overly agreeable or sycophantic toward the user's previously shown beliefs or preferences, which can amplify user biases and decrease output reliability or truthfulness For instance, when an LLM distills information about the user into a specific profile, it leads to the largest gains in agreement sycophancy.[12].
 
-3. **Finetuning Bottlenecks**: While finetuning LLMs on individual-specific data can yield personalized outputs, it is computationally expensive, often impractical at scale, and raises concerns over catastrophic forgetting (i.e., the model loses generalization capabilities as it specializes too much to one user)This survey reviews recent advancements in PLLMs from three technical perspectives: prompting for personalized context (input level), finetuning ...[1].
+2. **Lack of context retention and scaling:** Personalization often requires continuous adaptation to rich, evolving user context, but most LLMs struggle to retain and integrate such long-term contextual information efficiently—especially as user interaction history grows Personalization requires models to adapt behavior to individual users, often based on rich and evolving contextual information[13].
 
-4. **Serving Real-Time Responses with Long User Histories**: Incorporating long personal histories into LLMs for real-time, interactive applications is extremely challenging due to latency and architectural constraintsThere lie the technical challenges of incorporating long text data into recommendation models and serving them in real time.[3].
+3. **Computational cost and efficiency:** Many current personalization methods (e.g., full or partial fine-tuning) are computationally expensive, making it hard to efficiently and securely personalize at scale for a large number of users The work does present a few limitations.[15].
 
-5. **Personalization Memory Management**: As systems attempt to remember more user-specific information, resource (memory) constraints emerge, potentially degrading the quality or causing hallucinations in the model’s responsesAs the personalization memory fills up, the quality of LLM responses drops and hallucinations increase....[7].
+4. **Knowledge Forgetting and Tradeoffs:** Personalizing models may cause them to forget general capabilities or facts, as tuning towards individual needs can sometimes sacrifice broad generalization This algorithm presents a new vision for LLM personalization, which can elicit and adapt to diverse user preferences. The work does present a few limitations.[15].
 
-6. **Privacy and Security**: Gathering, storing, and processing enough user data to meaningfully personalize responses creates significant privacy risks, especially if this personal data is used directly or is required in large volumes for effective adaptationTo address the challenges faced by Legal Language Models (LLMs), including data privacy concerns, bias mitigation, explainability, and scalability issues, ...[4].
+5. **Inadequate safeguarding against misinformation and toxicity:** Personalized models can generate toxic or misleading content and may more easily circumvent content moderation, as safety mechanisms are typically tuned for the original, general-purpose distribution Personalized models tend to generate toxic content, provide misleading advice, and circumvent content moderation guidelines.[16].
 
-Overall, technically robust, real-time, truly personalized LLMs remain an open challenge due to a combination of modeling, computational, and privacy bottlenecks: fine-grained adaptation either compromises scale, speed, or user safety, and often fails to capture genuine individual differences."}
+Therefore, the main technical problems are overfitting to user data, loss of general knowledge (catastrophic forgetting), insufficient integration of long-term context, high computational demands for scaling, and weakened content and safety alignment after personalization."
+}
 
-{"query":"If we evaluate decision tree regressor and linear regression on the full training dataset, which one is more likely to appear artificially superior?","type":"clear","clarified_query":"","final_response":"When evaluated on the entire training dataset, a Decision Tree Regressor is more likely to appear artificially superior compared to Linear Regression because decision trees are prone to overfitting and can often memorize the training data, resulting in exceptionally high training performance. This overfitting causes decision trees to perform very well on the data they were trained on, even if they generalize poorly to new data. Linear regression, by contrast, is less flexible and does not typically achieve perfect fit on the training data unless the relationship is truly linear, making it less susceptible to this particular issue<cite id=\"eb46423e-3\"></cite>."}
-
-
-
-
-
+{
+  "query": "If we evaluate decision tree regressor and linear regression on the full training dataset, which one is more likely to appear artificially superior?",
+  "type": "clear",
+  "number_of_tokens": "1461",
+  "clarified_query": "",
+  "final_response": "When evaluated on the full training dataset, a decision tree regressor is much more likely to appear artificially superior compared to a linear regression model. This is because decision trees, if not properly constrained, can overfit the training data, often achieving nearly perfect predictions on the samples they have seen. This leads to an overestimation of their true predictive power and poor generalization to new data. In contrast, linear regression is limited by its inability to represent complex, nonlinear relationships, and thus is less prone to overfitting in this specific scenario<cite id="96869c1d-5"></cite>."
+}
