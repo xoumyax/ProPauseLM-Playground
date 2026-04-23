@@ -3,7 +3,7 @@
   "type": "vague",
   "clarified_query": "I want to know about the latest progress in conversational agent's capability of disambiguating user query",
   "number_of_tokens": "4089",
-  "gpt_response": "In recent years, conversational agents have made significant advances in disambiguating user queries by leveraging new architectures, large language models, and interactive clarification strategies:
+  "final_response": "In recent years, conversational agents have made significant advances in disambiguating user queries by leveraging new architectures, large language models, and interactive clarification strategies:
 
 1. **LLM-Enabled Disambiguation**: Modern conversational agents incorporate large language models (LLMs), which provide improved contextual understanding and rewrites of ambiguous queries. These models can transform ambiguous user utterances into more precise, stand-alone questions, thereby clarifying intent .[11, 26]
 

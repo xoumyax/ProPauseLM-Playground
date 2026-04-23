@@ -62,6 +62,20 @@ Below we assume you are already in the `agent` directory.
 
 > [!NOTE]
 > If you run crawl4ai locally, you will need to install playwright and its dependencies.
+## Instructions for collecting data:
+
+1. ask deep research agent a question
+
+2. check if you are satisfied with the answer
+  - 2.1 if yes, then it is a clear query, fill in "clear" in "type" of query_template.jsonl
+  - 2.2 if no, then it is a vague query, fill in "vague" in "type" of query_template.jsonl
+    - 2.2.1 refine your query based on the answer you get until you get the statisfied one
+
+3. paste the query that leads to the satisfied answer into "clarified_query"
+
+4. paste the satisfied answer in the final_response
+
+5. add the total "number of tokens" in llm_responses.jsonl together for a conversation, and paste the result in "number_of_tokens" in query.template.jsonl
 
 
 ## Deep Dive into the `serve` command: 
