@@ -656,6 +656,7 @@ class AutoReasonSearchWorkflow(BaseWorkflow):
             return {
                 "final_response": self.search_agent.postprocess_output(results),
                 "full_traces": results,
+                "total_tokens": results.total_tokens,
                 "browsed_links": browsed_links,
                 "searched_links": searched_links,
                 "total_tool_calls": total_tool_calls,

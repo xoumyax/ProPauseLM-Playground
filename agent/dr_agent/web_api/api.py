@@ -531,6 +531,7 @@ def create_app(
 
         return {
             "response": result.get("final_response", ""),
+            "tokens" : result.get("total_tokens", 0),
             "metadata": {
                 "total_tool_calls": result.get("total_tool_calls", 0),
                 "failed_tool_calls": result.get("total_failed_tool_calls", 0),
