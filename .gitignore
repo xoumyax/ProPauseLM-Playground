@@ -1,5 +1,10 @@
 agent/evaluation/**/data/
+<<<<<<< HEAD
 ProPauseLM-Playground/agent/.env.example
+=======
+
+
+>>>>>>> 8416e011c260856e766178a27f6c9ccb95562e3d
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[codz]

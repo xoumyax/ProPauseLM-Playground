@@ -149,8 +149,12 @@ If you find our work useful, please cite:
 If you have any questions, you can contact [Rulin Shao](https://rulinshao.github.io/), [Akari Asai](https://akariasai.github.io/), [Shannon Shen](https://www.szj.io/), and [Hamish Ivison](https://ivison.id.au/) or open a github issue. 
 
 ## running it on hprc:
-login and go to dr-tulu-sparse/agent
-srun -p gpu --nodes=1 --ntasks=1 --cpus-per-task=16 --mem=120G --gres=gpu:a100:2 --time=04:00:00 --pty bash
+cd ..
+cd ..
+(for GRACE) cd scratch/user/cyberwenyi2357/dr-tulu-sparse/agent
+(for ACES) cd scratch/user/u.xs335895/dr-tulu-sparse/agent
+(for GRACE) srun -p gpu --nodes=1 --ntasks=1 --cpus-per-task=16 --mem=120G --gres=gpu:a100:2 --time=04:00:00 --pty bash
+(for ACES) srun --partition=gpu_debug --nodes=1 --ntasks=1 --gres=gpu:h100:2 --time=01:00:00 --pty bash -i
 nvidia-smi
 conda activate dr_agent
 module load WebProxy/0000
@@ -169,6 +173,7 @@ open another terminal and login to the same node: check the 'gxx' besides the us
 ssh gxx
 go into the relevant directory and activate the environment
 set web proxy:
+conda activate dr_agent
 export http_proxy=http://10.73.132.63:8080
 export https_proxy=http://10.73.132.63:8080
 export HTTP_PROXY=$http_proxy

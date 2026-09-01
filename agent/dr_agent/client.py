@@ -192,6 +192,11 @@ class LLMToolClient:
 
         return any(pattern in model_lower for pattern in all_commercial_patterns)
 
+    def _supports_temperature(self) -> bool:
+        """Return whether current model accepts temperature parameter."""
+        # GPT-5 models reject explicit temperature in chat/completions.
+        return "gpt-5" not in self.model_name.lower()
+
     def add_tool(self, tool: BaseTool):
         """Add a tool to the client"""
         # Validate parser type consistency if we already have tools
@@ -205,6 +210,33 @@ class LLMToolClient:
                 )
 
         self.tools.append(tool)
+
+    def _last_user_message_content(self, messages: List[Dict[str, str]]) -> str:
+        """Last user-role message content in the chat (for logging)."""
+        for msg in reversed(messages):
+            if msg.get("role") == "user":
+                return str(msg.get("content") or "")
+        return ""
+
+    def _append_response_log_json(self, user_prompt: str, gpt_response: str) -> None:
+        """Append one record to a JSONL file if ``LLM_RESPONSE_LOG_JSON`` is set.
+
+        Each line is one JSON object including ``gpt_response`` and ``number_of_tokens``
+        (token count for that response, via :meth:`_count_tokens`).
+        """
+        path = os.environ.get("LLM_RESPONSE_LOG_JSON", "").strip()
+        if not path:
+            return
+        record = {
+            "user_prompt": user_prompt,
+            "gpt_response": gpt_response,
+            "number_of_tokens": self._count_tokens(gpt_response),
+        }
+        try:
+            with open(path, "a", encoding="utf-8") as f:
+                f.write(json.dumps(record, ensure_ascii=False) + "\n")
+        except OSError as e:
+            print(f"Warning: could not append LLM_RESPONSE_LOG_JSON ({path}): {e}")
 
     def _get_all_stop_sequences(self) -> List[str]:
         """Get all tool stop sequences"""
@@ -451,6 +483,8 @@ class LLMToolClient:
         else:
             messages = prompt_or_messages.copy()
 
+        user_prompt_for_log = self._last_user_message_content(messages)
+
         # Add generation prefix to the last user message if provided
         if generation_prefix:
             if messages and messages[-1]["role"] == "user":
@@ -627,6 +661,18 @@ class LLMToolClient:
         for msg in current_messages[original_message_count:]:
             generated_text += msg["content"]
 
+        print(
+            "\n========== generated_text (commercial API, full) ==========\n",
+            flush=True,
+        )
+        print(generated_text, flush=True)
+        print(
+            "\n========== end generated_text ==========\n",
+            flush=True,
+        )
+
+        self._append_response_log_json(user_prompt_for_log, generated_text)
+
         final_token_count = self._count_tokens_messages(current_messages)
         return GenerateWithToolsOutput(
             tool_calls=tool_calls,
@@ -659,8 +705,10 @@ class LLMToolClient:
 
         if isinstance(prompt_or_messages, str):
             prompt = prompt_or_messages
+            user_prompt_for_log = prompt_or_messages
         else:
             messages = prompt_or_messages
+            user_prompt_for_log = self._last_user_message_content(messages)
             prompt = self._messages_to_prompt(messages)
 
         # Track results
@@ -816,9 +864,22 @@ class LLMToolClient:
                     )
                 break
 
+        generated_text = current_context[len(prompt) :]
+        print(
+            "\n========== generated_text (vLLM, full) ==========\n",
+            flush=True,
+        )
+        print(generated_text, flush=True)
+        print(
+            "\n========== end generated_text ==========\n",
+            flush=True,
+        )
+
+        self._append_response_log_json(user_prompt_for_log, generated_text)
+
         return GenerateWithToolsOutput(
             tool_calls=tool_calls,
-            generated_text=current_context[len(prompt) :],
+            generated_text=generated_text,
             total_tokens=self._count_tokens(current_context),
             tool_call_count=tool_call_count,
             stopped_reason=(
@@ -854,6 +915,8 @@ class LLMToolClient:
             messages = [{"role": "user", "content": prompt_or_messages}]
         else:
             messages = prompt_or_messages.copy()
+
+        user_prompt_for_log = self._last_user_message_content(messages)
 
         # Build OpenAI tool schemas
         tools = [tool.to_openai_tool_schema() for tool in self.tools]
@@ -1126,6 +1189,7 @@ class LLMToolClient:
                     generated_text += f"\n<tool_output>{content}</tool_output>"
 
         final_token_count = self._count_tokens_messages(current_messages)
+        self._append_response_log_json(user_prompt_for_log, generated_text)
         return GenerateWithToolsOutput(
             tool_calls=tool_calls_made,
             generated_text=generated_text,
@@ -1156,12 +1220,13 @@ class LLMToolClient:
             "messages": messages,
             "tools": tools,
             "tool_choice": "auto",
-            "temperature": (
-                temperature if temperature is not None else config.temperature
-            ),
             "top_p": top_p if top_p is not None else config.top_p,
             "max_tokens": max_tokens if max_tokens is not None else config.max_tokens,
         }
+        if self._supports_temperature():
+            params["temperature"] = (
+                temperature if temperature is not None else config.temperature
+            )
 
         # Add seed if provided
         if seed is not None or config.seed is not None:
@@ -1216,13 +1281,14 @@ class LLMToolClient:
         params = {
             "model": self.model_name,
             "messages": messages,
-            "temperature": (
-                temperature if temperature is not None else config.temperature
-            ),
             "top_p": top_p if top_p is not None else config.top_p,
             "max_tokens": max_tokens if max_tokens is not None else config.max_tokens,
             "stop": stop_sequences,
         }
+        if self._supports_temperature():
+            params["temperature"] = (
+                temperature if temperature is not None else config.temperature
+            )
 
         # Add seed if provided
         if seed is not None or config.seed is not None:
