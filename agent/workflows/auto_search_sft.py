@@ -273,8 +273,8 @@ class AutoReasonSearchWorkflow(BaseWorkflow):
 
         # Separate generation client (SFT model)
         search_agent_base_url: Optional[str] = None
-        search_agent_model_name: str = "dr-tulu/DR-Tulu-8B"
-        search_agent_tokenizer_name: str = "Qwen/Qwen3-8B"
+        search_agent_model_name: str = "/home/soumya/FoundationModels/gemma-4-E4B-it"
+        search_agent_tokenizer_name: str = "/home/soumya/FoundationModels/gemma-4-E4B-it"
         search_agent_api_key: str = "dummy-key"
         search_agent_max_tokens: int = 32000
         search_agent_temperature: float = 0.7
@@ -282,8 +282,8 @@ class AutoReasonSearchWorkflow(BaseWorkflow):
 
         use_browse_agent: bool = False
         browse_agent_base_url: Optional[str] = None
-        browse_agent_model_name: str = "Qwen/Qwen3-8B"
-        browse_agent_tokenizer_name: str = "Qwen/Qwen3-8B"
+        browse_agent_model_name: str = "/home/soumya/FoundationModels/gemma-4-E4B-it"
+        browse_agent_tokenizer_name: str = "/home/soumya/FoundationModels/gemma-4-E4B-it"
         browse_agent_api_key: str = "dummy-key"
         browse_agent_max_tokens: int = 32000
         browse_agent_temperature: float = 0.3
@@ -690,7 +690,7 @@ class AutoReasonSearchWorkflow(BaseWorkflow):
         browsed_links = list(set(browsed_links))
         searched_links = list(set(searched_links))
 
-        if "<answer>" in results.generated_text:
+        if "<answer>" in results.generated_text or "<ask>" in results.generated_text:
             return {
                 "final_response": self.search_agent.postprocess_output(results),
                 "full_traces": results,

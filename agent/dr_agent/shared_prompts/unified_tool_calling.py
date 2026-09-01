@@ -115,6 +115,15 @@ SYSTEM_PROMPT_V20250907 = load_yaml(
 SYSTEM_PROMPT_CLI = load_yaml(
     (Path(__file__).parent / "unified_tool_calling_cli.yaml")
 )
+SYSTEM_PROMPT_CLI_STAGE2 = load_yaml(
+    (Path(__file__).parent / "unified_tool_calling_cli_stage2.yaml")
+)
+SYSTEM_PROMPT_CLI_STAGE3 = load_yaml(
+    (Path(__file__).parent / "unified_tool_calling_cli_stage3.yaml")
+)
+SYSTEM_PROMPT_CLI_STAGE4 = load_yaml(
+    (Path(__file__).parent / "unified_tool_calling_cli_stage4.yaml")
+)
 
 STRUCTURED_PROMPTS = {
     "v20250824": {
@@ -125,4 +134,7 @@ STRUCTURED_PROMPTS = {
     },
     "v20250907": SYSTEM_PROMPT_V20250907,
     "cli": SYSTEM_PROMPT_CLI,
+    "cli_stage2": SYSTEM_PROMPT_CLI_STAGE2,
+    "cli_stage3": SYSTEM_PROMPT_CLI_STAGE3,
+    "cli_stage4": SYSTEM_PROMPT_CLI_STAGE4,
 }

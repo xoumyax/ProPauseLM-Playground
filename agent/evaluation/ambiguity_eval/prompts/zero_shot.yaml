@@ -1,0 +1,5 @@
+# Zero-shot eval strategy.
+# System prompt is resolved at runtime from AutoReasonSearchWorkflow config
+# (the stage's cli_stage{1,2,3} yaml via prompt_version). No exemplars injected.
+strategy: zero_shot
+preamble_messages: []

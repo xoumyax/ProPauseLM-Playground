@@ -1,0 +1,63 @@
+# Few-shot CoT eval strategy — v4 (gold-sampled from v1+v2+v3).
+# Same simple format as the 3-exemplar default (no explicit "Type:" labels);
+# just natural <think> → <ambiguity> → branch. 6 exemplars, 3 clear / 3 vague,
+# one of each drawn from v1 (hardware-systems), v2 (LLM recsys), v3 (short
+# security-research) so the model sees the full distribution of query styles.
+strategy: few_shot_cot
+preamble_messages:
+  # --- v1 clear: named research method, narrow mechanism ---
+  - role: user
+    content: "How does Reinforcement Learning with Evolving Rubrics (RLER) work?"
+  - role: assistant
+    content: |
+      <think>The user names a specific method (RLER) and asks for its mechanism — the entity and asked dimension are both fixed.</think>
+      <ambiguity score="0.09">clear</ambiguity>
+      <call_tool name="snippet_search">Reinforcement Learning Evolving Rubrics RLER mechanism</call_tool>
+      <answer>RLER alternates policy updates with rubric refinement: the reward model's scoring rubric is re-derived from the latest policy rollouts, letting the evaluation criteria co-evolve with the policy's capability.</answer>
+
+  # --- v1 vague: problem category in hardware, mechanism missing ---
+  - role: user
+    content: "How reliable is modern memory technologies?"
+  - role: assistant
+    content: |
+      <think>"Memory reliability" is a problem category — the query does not commit to a specific mechanism, and different mechanisms (DRAM RowHammer, ECC scrubbing, NAND wear-out, persistent-memory recovery) lead to materially different answers.</think>
+      <ambiguity score="0.74">ambiguous</ambiguity>
+      <ask>Which memory reliability mechanism do you want — DRAM RowHammer disturbance errors, ECC scrubbing coverage, NAND flash wear-out, or persistent-memory crash consistency?</ask>
+
+  # --- v2 clear: specific stack + specific deliverable ---
+  - role: user
+    content: "Is there a PyTorch codebase for a hybrid recommender that uses matrix factorization for scoring and an LLM for explanation?"
+  - role: assistant
+    content: |
+      <think>The user specifies the framework (PyTorch), the scoring method (matrix factorization), and the explanation component (LLM); the asked dimension is "does such a repo exist". Entity and scope are both pinned.</think>
+      <ambiguity score="0.11">clear</ambiguity>
+      <call_tool name="google_search">PyTorch hybrid recommender matrix factorization LLM explanation github</call_tool>
+      <answer>Yes — MaximeUM/interpretable-mf-llm-explanations on GitHub pairs a PyTorch matrix-factorization scorer with an LLM that generates user-facing explanations, released with the study "From latent factors to language: a user study on LLM-generated explanations for an inherently interpretable matrix-based recommender system."</answer>
+
+  # --- v2 vague: deliverable under-specified (metric list vs paper example) ---
+  - role: user
+    content: "Measuring diversity for an LLM reranker in music playlists. Is there a standard metric set beyond accuracy, and what do papers actually use?"
+  - role: assistant
+    content: |
+      <think>The user asks two distinct things at once — a canonical metric set AND what specific papers use — and does not fix the deliverable. The right answer differs depending on whether they want a metric cheatsheet or a paper-example deep-dive.</think>
+      <ambiguity score="0.68">ambiguous</ambiguity>
+      <ask>Which do you want first — (a) the canonical diversity-metric set for LLM rerankers (intra-list diversity, coverage, novelty, serendipity with formal definitions), or (b) a concrete recent paper on music-playlist reranking with the metrics it reports?</ask>
+
+  # --- v3 clear: specific CWE + specific asked dimensions ---
+  - role: user
+    content: "Analyze this security issue: template_variable_injection (CWE-94). What is the vulnerability and its CWE classification?"
+  - role: assistant
+    content: |
+      <think>The query names a specific vulnerability (template_variable_injection, CWE-94) and asks for two well-defined dimensions: nature of the vulnerability and its CWE classification. Fully scoped.</think>
+      <ambiguity score="0.08">clear</ambiguity>
+      <call_tool name="google_search">CWE-94 code injection template variable injection definition</call_tool>
+      <answer>Template-variable injection is a variant of CWE-94 (Improper Control of Generation of Code — "Code Injection"): user-controlled data is interpolated into a template rendered with code-execution semantics (e.g., Jinja2 SSTI, Thymeleaf, Freemarker), allowing attackers to execute arbitrary code. It is typically HIGH-to-CRITICAL severity depending on the context it runs in.</answer>
+
+  # --- v3 vague: short security query missing scope (which CVE? class or instance?) ---
+  - role: user
+    content: "Tell me about CWE-91 vulnerabilities."
+  - role: assistant
+    content: |
+      <think>"CWE-91" names the weakness class (XML injection) but the query does not say whether the user wants the class definition, a specific CVE instance, or detection/remediation guidance. The right answer differs across these.</think>
+      <ambiguity score="0.71">ambiguous</ambiguity>
+      <ask>Which do you want — (1) the CWE-91 class definition and how XML injection works, (2) a specific real-world CVE instance to study, (3) detection rules (WAF/Snort/YARA), or (4) mitigation and safe-parser guidance?</ask>

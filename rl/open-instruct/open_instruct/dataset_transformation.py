@@ -63,18 +63,41 @@ from transformers import (
     LlamaTokenizerFast,
     PreTrainedTokenizer,
 )
-from transformers.utils.hub import (
-    _CACHED_NO_EXIST,
-    TRANSFORMERS_CACHE,
-    extract_commit_hash,
-    try_to_load_from_cache,
-)
+try:
+    from transformers.utils.hub import (
+        _CACHED_NO_EXIST,
+        TRANSFORMERS_CACHE,
+        extract_commit_hash,
+        try_to_load_from_cache,
+    )
+except ImportError:
+    # transformers 5.x removed these from utils.hub
+    from huggingface_hub import try_to_load_from_cache, constants as _hf_constants
+    _CACHED_NO_EXIST = None
+    TRANSFORMERS_CACHE = _hf_constants.HF_HUB_CACHE
+    extract_commit_hash = lambda *args, **kw: None
 
 from open_instruct.utils import hf_whoami
 
 
 # ----------------------------------------------------------------------------
 # Utilities
+
+def _extract_input_ids(result):
+    """Extract a plain list of int token IDs from apply_chat_template output.
+
+    Gemma4 (and other multimodal tokenizers) return a BatchEncoding (UserDict)
+    from apply_chat_template instead of a plain list of ints.
+    """
+    if hasattr(result, "input_ids"):
+        result = result.input_ids
+    elif isinstance(result, dict):
+        result = result["input_ids"]
+    if isinstance(result, list) and len(result) > 0 and isinstance(result[0], list):
+        result = result[0]
+    return [int(t) for t in result]
+
+
 def custom_cached_file(model_name_or_path: str, filename: str, revision: str = None, repo_type: str = "model"):
     """@vwxyzjn: HF's `cached_file` no longer works for `repo_type="dataset"`."""
     # local_file = os.path.join(model_name_or_path, filename)
@@ -143,7 +166,7 @@ def visualize_token(tokens: list[int], tokenizer: PreTrainedTokenizer):
     rich_text = Text()
     for i, token in enumerate(tokens):
         color = COLORS[i % len(COLORS)]
-        decoded_token = tokenizer.decode(token)
+        decoded_token = tokenizer.decode(int(token) if not isinstance(token, int) else token)
         rich_text.append(f"{decoded_token}", style=color)
     console.print(rich_text)
 
@@ -155,8 +178,8 @@ def visualize_token_role(tokens: list[int], masks: list[int], tokenizer: PreTrai
     # for i, token in enumerate():
     for i in range(min(len(tokens), len(masks))):
         token = tokens[i]
-        color = COLORS[masks[i] % len(COLORS)]
-        decoded_token = tokenizer.decode(token)
+        color = COLORS[int(masks[i]) % len(COLORS)]
+        decoded_token = tokenizer.decode(int(token) if not isinstance(token, int) else token)
         rich_text.append(f"{decoded_token}", style=color)
     console.print(rich_text)
 
@@ -981,11 +1004,11 @@ def rlvr_tokenize_v1(
         prompt = row[sft_messages_key]
     else:
         prompt = row[sft_messages_key][:-1]
-    row[INPUT_IDS_PROMPT_KEY] = tokenizer.apply_chat_template(
+    row[INPUT_IDS_PROMPT_KEY] = _extract_input_ids(tokenizer.apply_chat_template(
         prompt,
         add_generation_prompt=True,
-    )
-    row[INPUT_IDS_KEY] = tokenizer.apply_chat_template(row[sft_messages_key])
+    ))
+    row[INPUT_IDS_KEY] = _extract_input_ids(tokenizer.apply_chat_template(row[sft_messages_key]))
     row[ATTENTION_MASK_KEY] = [1] * len(row[INPUT_IDS_KEY])
     labels = copy.deepcopy(row[INPUT_IDS_KEY])
     row[LABELS_KEY] = labels
@@ -1005,13 +1028,11 @@ def rlvr_tokenize_v2(
         prompt = row[sft_messages_key]
     else:
         prompt = row[sft_messages_key][:-1]
-    row[INPUT_IDS_PROMPT_KEY] = tokenizer.apply_chat_template(
+    row[INPUT_IDS_PROMPT_KEY] = _extract_input_ids(tokenizer.apply_chat_template(
         prompt,
         add_generation_prompt=True,
-    )
-    row[INPUT_IDS_KEY] = tokenizer.apply_chat_template(row[sft_messages_key])
-    # weird issue with qwen: sometimes the padding token ends up in the input ids?
-    # ill look into this more later, for now this guard should be enough
+    ))
+    row[INPUT_IDS_KEY] = _extract_input_ids(tokenizer.apply_chat_template(row[sft_messages_key]))
     if tokenizer.pad_token_id in row[INPUT_IDS_KEY]:
         row[INPUT_IDS_KEY] = [x for x in row[INPUT_IDS_KEY] if x != tokenizer.pad_token_id]
     if tokenizer.pad_token_id in row[INPUT_IDS_PROMPT_KEY]:
@@ -1056,13 +1077,11 @@ def rlvr_tokenize_v3(
         prompt = messages
     else:
         prompt = messages[:-1]
-    row[INPUT_IDS_PROMPT_KEY] = tokenizer.apply_chat_template(
+    row[INPUT_IDS_PROMPT_KEY] = _extract_input_ids(tokenizer.apply_chat_template(
         prompt,
         add_generation_prompt=True,
-    )
-    row[INPUT_IDS_KEY] = tokenizer.apply_chat_template(messages)
-    # weird issue with qwen: sometimes the padding token ends up in the input ids?
-    # ill look into this more later, for now this guard should be enough
+    ))
+    row[INPUT_IDS_KEY] = _extract_input_ids(tokenizer.apply_chat_template(messages))
     if tokenizer.pad_token_id in row[INPUT_IDS_KEY]:
         row[INPUT_IDS_KEY] = [x for x in row[INPUT_IDS_KEY] if x != tokenizer.pad_token_id]
     if tokenizer.pad_token_id in row[INPUT_IDS_PROMPT_KEY]:
@@ -1247,13 +1266,11 @@ def rlvr_tokenize_rl_rag_v1(
         prompt = messages[:-1]
     else:
         prompt = messages
-    row[INPUT_IDS_PROMPT_KEY] = tokenizer.apply_chat_template(
+    row[INPUT_IDS_PROMPT_KEY] = _extract_input_ids(tokenizer.apply_chat_template(
         prompt,
         add_generation_prompt=True,
-    )
-    row[INPUT_IDS_KEY] = tokenizer.apply_chat_template(messages)
-    # weird issue with qwen: sometimes the padding token ends up in the input ids?
-    # ill look into this more later, for now this guard should be enough
+    ))
+    row[INPUT_IDS_KEY] = _extract_input_ids(tokenizer.apply_chat_template(messages))
     if tokenizer.pad_token_id in row[INPUT_IDS_KEY]:
         row[INPUT_IDS_KEY] = [x for x in row[INPUT_IDS_KEY] if x != tokenizer.pad_token_id]
     if tokenizer.pad_token_id in row[INPUT_IDS_PROMPT_KEY]:

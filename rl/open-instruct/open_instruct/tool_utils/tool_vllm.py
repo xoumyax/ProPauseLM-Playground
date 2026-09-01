@@ -26,8 +26,14 @@ from vllm import (
     TokensPrompt,
 )
 from vllm.lora.request import LoRARequest
-from vllm.model_executor.guided_decoding.guided_fields import GuidedDecodingRequest
-from vllm.prompt_adapter.request import PromptAdapterRequest
+try:
+    from vllm.model_executor.guided_decoding.guided_fields import GuidedDecodingRequest
+except ImportError:
+    GuidedDecodingRequest = None  # removed in vllm >=0.19
+try:
+    from vllm.prompt_adapter.request import PromptAdapterRequest
+except ImportError:
+    PromptAdapterRequest = None  # removed in vllm >=0.19
 from vllm.sampling_params import RequestOutputKind
 
 

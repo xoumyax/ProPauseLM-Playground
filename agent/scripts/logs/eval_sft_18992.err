@@ -1,0 +1,1149 @@
+/home/soumya/.conda/envs/dr_agent/lib/python3.10/contextlib.py:103: DeprecationWarning: Use `streamable_http_client` instead.
+  self.gen = func(*args, **kwds)
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f249779e260>, 6445024.223980753)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f2497c89c60>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f249779e200>, 6445028.097684518)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f2497550040>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f249779e140>, 6445054.563787793)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f2497553550>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f249779ef80>, 6445057.248360056)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f24974f5480>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f249779f700>, 6445060.383160095)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f24974f5450>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f249779ee60>, 6445061.157936892)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f24971a31c0>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f249779dfc0>, 6445065.805732815)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f24971a3a30>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f24972501c0>, 6445066.680672034)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f24974f76d0>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f2497d53a00>, 6445057.963696562)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f24971a2440>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f249779fee0>, 6445076.190834089)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f2496f3a200>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f249779f4c0>, 6445076.929642242)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f2496f3a740>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f249779f340>, 6445078.998321241)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f2496f3ad40>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f249779e3e0>, 6445080.443411567)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f2497550820>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f249779e860>, 6445082.107844497)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f2496f39ff0>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f249779c400>, 6445083.245975066)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f24977d5870>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f249779cb80>, 6445083.819912456)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f2496f38dc0>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f249779d120>, 6445093.561278168)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f24977d7700>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f2497250be0>, 6445094.062666557)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f2496f3b8b0>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f2497250fa0>, 6445094.838984332)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f24974f5ed0>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f249779c6a0>, 6445096.480795328)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f2496f39120>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f2497251000>, 6445098.391854847)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f24977d74f0>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f249779df60>, 6445109.12240596)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f24974f5150>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f249779f340>, 6445109.817337352)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f24977d5120>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f249779d660>, 6445115.878750795)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f24974f43d0>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f249779db40>, 6445116.574089175)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f24977d7eb0>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f249779d120>, 6445121.378220685)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f2497553880>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f249779dd20>, 6445122.135506004)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f24977d44c0>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f249779c9a0>, 6445122.668318899)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f2497c88580>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f2497250280>, 6445123.413844552)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f24971a1630>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f2497250760>, 6445130.776132027)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f24971a2680>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f24972507c0>, 6445131.285949976)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f24977d5a50>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f24972519c0>, 6445153.08594021)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f2496f3bc40>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f2497251d20>, 6445153.687881581)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f24977d7ee0>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f249779efe0>, 6445159.297187234)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f2496f18730>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f249779d300>, 6445159.812287516)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f24971fb850>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f249779fc40>, 6445175.459284398)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f2496f1ada0>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f249779eda0>, 6445176.025242211)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f2496f39210>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f2497252020>, 6445182.032672798)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f2497553a00>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f249779d5a0>, 6445182.684355547)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f24971fbf40>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f249779f040>, 6445183.679730159)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f2496f38b80>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f2497252020>, 6445184.986250541)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f24971a26e0>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f24972512a0>, 6445187.030599891)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f24971a2740>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f2497250fa0>, 6445187.640463629)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f24975510f0>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f24972513c0>, 6445188.891140947)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f2497550160>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f2497251360>, 6445192.549122085)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f2497551390>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f2497250820>, 6445193.016850389)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f24977d5570>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f2497252140>, 6445195.419974736)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f2497c8aaa0>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f2497252380>, 6445195.991987591)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f24977d6920>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f249779ee00>, 6445199.606273379)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f24977d7e20>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f249779f3a0>, 6445200.346000211)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f24974f5150>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f2497252da0>, 6445201.19410192)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f24975506d0>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f2497251ea0>, 6445210.096481222)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f2497553af0>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f2497252500>, 6445213.91684057)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f24974f7550>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f2497251120>, 6445231.197342894)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f2496f3add0>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f2497252bc0>, 6445231.819402301)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f24975509d0>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f2497252d40>, 6445233.293128666)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f24974f42e0>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f2497250dc0>, 6445233.929365442)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f2496f1a5c0>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f2497252b60>, 6445238.8136923)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f24971fb1c0>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f2497252fe0>, 6445239.626721177)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f2496f18eb0>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f2497252fe0>, 6445240.911331142)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f24968ab130>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f249779f160>, 6445242.590355727)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f24968a9030>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f249779e0e0>, 6445243.220812745)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f24971fa7d0>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f2497253460>, 6445249.702126768)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f24968aaa10>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f2497252da0>, 6445253.447666017)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f24971a2cb0>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f24972534c0>, 6445258.086450054)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f2562f4c5e0>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f24972513c0>, 6445284.301566331)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f2496f1b340>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f2497253a00>, 6445284.759171636)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f24971fb2b0>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f2497251780>, 6445290.577906295)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f2497553070>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f2497253a60>, 6445292.878765341)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f24971fbc70>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f24972535e0>, 6445293.3686078)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f24974f6800>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f24968c4880>, 6445296.491219047)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f2496934310>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f2497252980>, 6445297.152645438)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f2497552cb0>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f2497253ca0>, 6445298.229474681)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f24977d49d0>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f249779c820>, 6445291.216906137)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f24977d5ba0>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f249779fac0>, 6445298.851927799)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f24969361a0>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f2497253640>, 6445299.601382385)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f24977d7b80>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f24968c41c0>, 6445301.230356333)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f24974f6800>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f24972534c0>, 6445311.209500184)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f24977d6bc0>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f2497250b20>, 6445311.938705407)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f24974f72b0>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f249779eda0>, 6445313.531146143)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f2496f19480>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f2497252fe0>, 6445314.618391175)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f24971a1810>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f249779e3e0>, 6445323.221220782)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f2496f3bf70>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f24972507c0>, 6445323.75594273)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f2496f1b730>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f249779d0c0>, 6445330.144409072)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f24977d61a0>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f249779c040>, 6445330.790760624)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f24968a8100>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f24968c4100>, 6445332.37254507)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f2496935720>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f24968c4be0>, 6445334.348216873)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f2496f1b6d0>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f24968c5000>, 6445335.014235458)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f2496936320>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f2497252380>, 6445340.30196334)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f24971fa650>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f2497251a20>, 6445341.111547334)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f24968a9b40>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f2497250ee0>, 6445341.869415445)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f24971fa6e0>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f24972500a0>, 6445342.653645341)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f2496f19480>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f2497250f40>, 6445344.047804019)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f2496935780>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f2497251ba0>, 6445349.071516973)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f2496f39930>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f2497252fe0>, 6445349.659374354)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f2496935780>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f24968c4b20>, 6445351.235852428)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f24977d7b50>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f24968c5120>, 6445353.006048681)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f24974f6320>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f24968c4280>, 6445353.711395273)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f24977d7280>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f2497253700>, 6445357.834663563)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f24975516c0>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f2497252260>, 6445358.52396576)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f24977d5360>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f2497253ca0>, 6445359.726278374)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f24969364a0>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f2497250d00>, 6445362.322848913)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f24977d6680>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f249779fac0>, 6445366.4184151)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f2496f1a0b0>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f249779cdc0>, 6445367.393191774)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f24969371c0>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f24968c5540>, 6445368.536975585)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f2496f38a00>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f24968c52a0>, 6445369.682622116)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f2496f193c0>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f24968c6e60>, 6445371.043196875)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f24971fae90>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f2497251ba0>, 6445372.763541792)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f24966dcf40>
+Token indices sequence length is longer than the specified maximum sequence length for this model (8635 > 8192). Running this sequence through the model will result in indexing errors
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f24968c6c80>, 6445374.054176457)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f24971f9cf0>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f24968c6fe0>, 6445374.140610488)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f24971fa830>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f24968c6200>, 6445403.415340881)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f2496f19fc0>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f2497250e20>, 6445404.008669429)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f24968a9540>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f2497251b40>, 6445412.010598291)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f2496f1b730>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f24968c48e0>, 6445412.976594461)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f24971faf50>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f24968c58a0>, 6445417.966161189)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f2497c88a90>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f24968c6a40>, 6445422.543729619)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f24971fadd0>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f249779ef20>, 6445414.619225519)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f2496936b30>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f24968c4460>, 6445426.193382199)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f24977d61a0>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f24972514e0>, 6445428.867580458)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f24975506d0>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f24968c7a00>, 6445457.095612502)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f24977d45e0>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f2497253e20>, 6445457.812354243)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f2496935e40>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f24968c5540>, 6445459.367242676)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f24968a9270>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f24968c61a0>, 6445477.154962839)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f24968a9990>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f24968c5d80>, 6445477.832419808)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f24971a0670>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f24968c6320>, 6445478.373414098)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f24966df1c0>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f24968c6680>, 6445482.217262896)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f24971fbeb0>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f24968c5b40>, 6445482.805485389)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f24966df880>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f24968c7b80>, 6445487.080360307)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f2496400730>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f24968c6da0>, 6445487.673771136)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f2496403580>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f2497251a20>, 6445494.050664858)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f2496403d90>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f2497252800>, 6445494.801143487)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f24966dea70>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f2497253220>, 6445500.092024666)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f24968a9d50>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f24972513c0>, 6445500.763255977)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f2493c6e830>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f2497250b80>, 6445502.398134768)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f2496402140>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f249779c6a0>, 6445508.754347275)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f24968a9f00>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f24968c4040>, 6445537.74761669)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f2496402170>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f24968c7520>, 6445538.238568427)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f2496f18a30>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f24968c7ac0>, 6445539.334203064)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f2496f18a00>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f24968c6860>, 6445540.220891149)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f24971a31c0>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f24968c6a40>, 6445542.037878415)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f2497551960>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f249779df00>, 6445542.599028837)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f24975518a0>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f24968c75e0>, 6445550.924869433)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f2496f38df0>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f24968c7a00>, 6445554.899779866)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f2496f1ae60>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f24968c4640>, 6445555.364124887)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f24977d4910>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f24968c40a0>, 6445555.799169513)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f2496f19c30>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f24968c5180>, 6445556.45320158)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f2496f3b190>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f2497252500>, 6445557.772962155)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f24974f4370>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f249779d4e0>, 6445560.127421909)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f2496935db0>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f24968c6020>, 6445560.722674776)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f2497550700>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f24968c5ae0>, 6445564.148819559)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f24971a1210>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f24968c59c0>, 6445565.690704406)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f2497550190>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f24968c4400>, 6445566.213482392)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f2496f3a890>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f24968c5a20>, 6445570.268209805)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f2496401780>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f24968c7c40>, 6445571.1095399)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f2497c89030>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f24968c5e40>, 6445571.853609495)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f24966dcbe0>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f24968c7b20>, 6445577.113713161)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f24966dc520>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f24968c53c0>, 6445577.751339443)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f2496401810>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f24963c8760>, 6445582.149245926)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f24966dee90>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f24963c8b80>, 6445582.953781776)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f2496403dc0>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f24968c7ca0>, 6445584.176457985)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f24968aadd0>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f24968c4160>, 6445587.348268999)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f24968a8eb0>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f24968c7340>, 6445588.016502543)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f24966dc820>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f24968c5060>, 6445594.19033049)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f24971a2680>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f24968c4be0>, 6445594.875067668)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f2496f19e40>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f24968c4760>, 6445596.107260947)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f24974f68c0>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f24968c5c60>, 6445596.402641357)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f24974f7730>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f24968c5cc0>, 6445597.16866667)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f2496f18a60>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f24968c5480>, 6445597.686670345)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f24971fb520>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f24963c8dc0>, 6445598.344350508)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f2496f18370>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f24963c89a0>, 6445600.615222649)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f24974f4af0>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f24963c8ac0>, 6445601.437646431)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f24975537f0>
+Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7f2495f1a170>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f24972534c0>, 6445603.348069089)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f2495f1a380>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f24963c8a60>, 6445607.038490607)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f24966dcfa0>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f24963c9300>, 6445607.539591963)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f24977d5f90>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f24963caaa0>, 6445608.241491325)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f2495e885b0>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f24968c4880>, 6445608.994843281)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f2495f1a2c0>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f24972534c0>, 6445615.070068076)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f2495f18970>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f2497252860>, 6445619.573917693)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f2495f1bb20>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f2497252320>, 6445633.188450819)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f24974f6440>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f24963cada0>, 6445633.987761942)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f2495f1a230>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f24963ca9e0>, 6445636.468894749)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f24971a21d0>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f24963caaa0>, 6445642.124406928)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f2495f1b9d0>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f24963ca860>, 6445660.185910591)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f24968ab010>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f24963c87c0>, 6445660.882417174)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f24968a9150>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f24963c8d00>, 6445661.556393472)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f2497553a60>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f24963ca920>, 6445667.960318328)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f24971f9360>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f24963c9a20>, 6445668.895502033)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f2495e88820>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f24968c74c0>, 6445686.831410393)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f2495e89390>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f24968c4040>, 6445687.391807435)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f24966dfaf0>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f24968c5960>, 6445688.567444367)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f24966c0130>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f24963c9420>, 6445689.404757478)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f24971fbd30>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f24963c9780>, 6445690.9782405)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f2495e8beb0>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f24963ca6e0>, 6445691.941135869)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f2496f18910>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f24963ca800>, 6445695.849827315)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f24966c02e0>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f24963ca860>, 6445699.888444537)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f2496403cd0>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f24963c9ae0>, 6445712.430344983)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f24971fac20>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f24963cb160>, 6445713.157520327)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f24977d53f0>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f24963cbbe0>, 6445715.369404338)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f24974f47c0>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f2497253be0>, 6445719.067694208)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f2496935480>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f2497252ce0>, 6445719.976219701)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f2497553130>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f24963cba60>, 6445720.480691813)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f24969373a0>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f24963cb280>, 6445721.206140444)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f2496402110>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f24963ca440>, 6445726.660412013)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f2496403b50>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f24963cb2e0>, 6445740.595485101)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f24971a19f0>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f24963ca3e0>, 6445741.070755658)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f2496f1a680>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f2497252320>, 6445742.258186217)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f2496f18a90>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f24963c98a0>, 6445742.925818722)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f2496401750>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f24963c85e0>, 6445744.231600205)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f24966c1000>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f24963ca680>, 6445745.023961604)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f24966de080>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f24963c9900>, 6445751.041722623)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f24968ab820>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f24963cab00>, 6445751.595227498)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f2495e89f30>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f24963c9780>, 6445754.989265903)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f2495f1ae00>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f24963c9180>, 6445755.611149713)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f2495e8af50>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f24963cbb20>, 6445758.922728898)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f2496f3a3b0>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f24963c8280>, 6445761.667060717)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f24966c3af0>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f24963ca3e0>, 6445767.893978473)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f2496f1a500>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f24968c6bc0>, 6445768.382180997)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f24968a9690>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f24963c89a0>, 6445769.605093574)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f2496f19c60>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f24963c92a0>, 6445770.216996642)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f24966c15a0>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f24968c6f80>, 6445771.120445841)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f24966df460>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f2495f34400>, 6445779.647845222)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f2495f19f30>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f24963c93c0>, 6445780.451160133)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f24969376d0>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f2495f34b20>, 6445782.053664395)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f2495ec4c70>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f24968c79a0>, 6445782.598891218)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f24966de920>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f24963c8580>, 6445783.258187618)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f2496f38e50>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f2495f34760>, 6445787.28783925)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f2496401b40>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f24968c4280>, 6445791.24081392)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f2495f18070>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f2495f34940>, 6445792.071702745)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f24966de920>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f24963cada0>, 6445787.95463586)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f2495ec72b0>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f24968c4280>, 6445793.785228122)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f24966dc580>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f24963ca500>, 6445797.942389748)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f2496402230>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f24963c97e0>, 6445798.639613051)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f24977d5f90>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f24963ca620>, 6445799.906937032)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f24971a3970>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f24963ca320>, 6445800.588143823)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f2495e8a500>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f24963ca740>, 6445803.747281563)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f2495f18b20>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f24963c9660>, 6445807.627244772)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f2495e89600>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f2495f34640>, 6445810.534432513)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f24977d48b0>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f2495f357e0>, 6445819.24619008)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f2495f1a260>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f2495f34dc0>, 6445826.986311249)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f2495ec7910>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f2495f35fc0>, 6445827.670549846)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f2495edf3d0>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f24963cbbe0>, 6445833.331952091)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f2495ede500>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f24963ca2c0>, 6445833.900132066)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f2496937490>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f24968c5d80>, 6445834.649058287)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f2495f193f0>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f24963cb160>, 6445837.621136594)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f2496f3a3b0>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f24963ca7a0>, 6445838.762486027)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f2496f39d50>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f24968c7340>, 6445844.723224657)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f24966dc640>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f2495f36140>, 6445845.416439279)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f24968a9d80>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f2495f359c0>, 6445846.225477799)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f24971f92a0>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f2495f34e20>, 6445851.456554274)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f24971fb760>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f2495f35ba0>, 6445852.38550375)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f2495e89300>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f2495f344c0>, 6445852.8960733)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f2495ec4940>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f24968c4e80>, 6445856.348219806)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f2495eddd80>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f2495f35780>, 6445856.821553749)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f2496f1b250>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f2495f34e80>, 6445857.370101424)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f2495e88ee0>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f24963ca6e0>, 6445858.184030546)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f2495e8bd00>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f2495f362c0>, 6445859.009729044)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f2495f1ab90>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f2495f34640>, 6445861.624199869)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f2495ec4be0>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f2495f344c0>, 6445862.44214051)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f24966c0190>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f24963c8e20>, 6445864.139143414)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f2496401a50>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f24963ca2c0>, 6445864.757173191)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f2495ec6920>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f2495f36e00>, 6445867.27537866)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f24966c0190>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f24963ca2c0>, 6445867.784224474)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f2496f3ab30>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f2495f34700>, 6445873.94889816)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f24a6c25ea0>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f2495f34580>, 6445881.818424512)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f24966c07f0>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f2495f34220>, 6445882.453477902)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f2495f1b5e0>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f24963cabc0>, 6445884.432848859)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f2496937e50>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f2495f35f00>, 6445884.960898124)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f24974f6920>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f2495f364a0>, 6445885.662556036)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f24968aa1a0>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f2495f36e60>, 6445891.402407421)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f2495f18e80>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f2495f36c20>, 6445892.046982836)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f2495ede290>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f2495f36680>, 6445893.934469041)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f2495edde70>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f2495f36ec0>, 6445894.674755291)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f2495ec7ca0>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f2495f37040>, 6445896.166263544)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f2495e889d0>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f2495f363e0>, 6445896.698577348)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f24968abd60>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f2495f374c0>, 6445897.12594403)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f2495ede4a0>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f24968c5660>, 6445893.223202209)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f249611d600>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f2495f35ba0>, 6445899.190672908)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f24968aa860>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f2495f35960>, 6445899.683446814)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f2495e8acb0>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f2495f36ec0>, 6445900.032402418)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f2495edca90>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f24963ca3e0>, 6445904.759211963)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f2495f1b280>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f24968c4e20>, 6445908.890700723)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f2496f186a0>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f24963c9600>, 6445913.534804964)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f2495edd3f0>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f2495f35c60>, 6445928.318776117)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f2496f1a980>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f2495f35720>, 6445929.212445051)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f2495f1a530>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f2495f375e0>, 6445931.742679759)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f2495ec7e20>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f24963c9780>, 6445932.53641678)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f2495ec4850>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f2495f365c0>, 6445934.094423785)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f2495ec72e0>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f2495f37880>, 6445939.815360881)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f2496f18b50>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f2495f36d40>, 6445940.272543974)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f2495edf040>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f2495f37f40>, 6445940.906172104)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f249611d180>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f2495f36020>, 6445942.531393728)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f24977d7910>
+Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7f2495e89f90>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f24963c9780>, 6445935.777743746)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f2496f19fc0>
+Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7f249611e680>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f2495f37f40>, 6445941.486495587)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f249611e890>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f24963c9120>, 6445948.7062421)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f249611fee0>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f2496158280>, 6445949.206905904)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f249611ee30>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f2496158dc0>, 6445950.256284292)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f2495ec6860>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f2495f343a0>, 6445950.780748308)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f2496935ae0>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f2495f34700>, 6445953.2855753)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f2495ec7fa0>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f2495f37640>, 6445954.149235561)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f24971a2920>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f2495f34700>, 6445955.391329632)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f24975537f0>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f2495f369e0>, 6445955.82428394)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f2495ec76d0>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f2495f357e0>, 6445956.620504738)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f24974f6c20>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f2495f357e0>, 6445958.018204257)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f2496936710>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f2495f34e20>, 6445958.9618575)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f2495ec44f0>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f2495f37fa0>, 6445959.480551545)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f24971fa410>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f2495f36b00>, 6445960.758243324)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f24977d6020>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f2495f36aa0>, 6445961.587204022)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f2495ec46a0>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f2495f35c60>, 6445962.176055837)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f2496936080>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f2495f36aa0>, 6445962.865481356)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f2496936cb0>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f2495f362c0>, 6445964.22765459)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f2495ec7520>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f2495f37fa0>, 6445964.855134867)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f24977d6cb0>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f2495f34dc0>, 6445969.418210543)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f2495e88c70>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f2495f34fa0>, 6445970.048980683)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f2562f4c5e0>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f24963c9600>, 6445970.736913455)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f2495ec4370>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f2495f35a80>, 6445972.458213389)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f2495ec6a10>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f24963ca2c0>, 6445973.001451394)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f24971a24a0>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f24963ca740>, 6445989.031897142)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f24971a1450>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f2495f356c0>, 6445989.858499947)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f2495ec77f0>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f24963c8400>, 6445991.128436734)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f24969376d0>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f2495f34b80>, 6445991.58825893)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f24977d7df0>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f24961590c0>, 6445992.03520631)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f2495e89990>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f2495f34fa0>, 6445971.35960081)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f24968aa830>
+Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7f24968ab9d0>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f24968c6b60>, 6445973.734730539)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f2495e8b130>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f2496159060>, 6446011.394352086)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f24977d7df0>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f2496158dc0>, 6446012.20508867)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f2495edf100>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f2496159240>, 6446013.643060569)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f2496f18bb0>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f2495f34e20>, 6446015.849162008)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f24964005b0>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f2495f34400>, 6446016.347439868)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f2495edce20>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f2495f37580>, 6446017.63567989)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f2496f18880>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f2495f36aa0>, 6446018.37824689)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f2495f18a60>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f2495f37d60>, 6446027.223055583)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f2496f18280>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f24963c9120>, 6446028.392172626)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f2495ede410>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f24963c9120>, 6446029.560862377)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f2495edc8b0>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f24963c9e40>, 6446030.278925586)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f2496401db0>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f24963c9240>, 6446032.643203056)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f2495ede950>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f2496158a60>, 6446033.082348314)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f2496f3a2c0>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f2496159360>, 6446033.554695968)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f2496937820>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f24963c9780>, 6446034.90062964)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f24969361a0>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f24961584c0>, 6446036.625692772)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f2495edfdc0>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f24961580a0>, 6446037.262473302)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f2495e8ac50>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f24963cabc0>, 6446038.016428113)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f2495e88430>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f24961597e0>, 6446039.413226486)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f2496f19090>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f2496159060>, 6446044.015116322)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f2495e89240>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f249615a5c0>, 6446045.249387633)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f249611fd60>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f2495f36560>, 6446045.767553661)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f2495e8af50>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f249615a140>, 6446047.851616714)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f2496f18bb0>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f2496158fa0>, 6446051.625221752)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f249611e770>
+Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7f2495edcca0>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f24968c7e20>, 6446016.975321414)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f2495ede8c0>
+Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7f24968a9900>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f2495f37760>, 6446026.582205383)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f24968a8f10>
+Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7f24971fb760>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f2495f37d60>, 6446029.002893102)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f24966de500>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f2495f37880>, 6446056.866221703)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f249611fc70>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f2495f34580>, 6446062.265338749)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f2495ec4520>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f24968c6440>, 6446063.194835755)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f2495e89450>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f24963cace0>, 6446064.058396989)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f2495e8a0b0>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f2495f35f60>, 6446065.289715046)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f249611f9d0>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f2495f34fa0>, 6446065.717193761)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f2495ec7d60>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f24968c6b60>, 6446066.877780394)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f2495ec6bf0>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f2495f34580>, 6446068.380384711)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f249611e110>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f249615a980>, 6446069.081786547)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f24974f6bc0>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f24963ca3e0>, 6446069.598498974)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f24977d6c80>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f2495f36da0>, 6446074.932445301)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f249611cb50>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f2495f372e0>, 6446077.98819216)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f24977d6620>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f2496158d00>, 6446083.50714356)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f249611e140>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f249615b460>, 6446100.695225369)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f2495ede020>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f249615aa40>, 6446107.195651749)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f2495c3a290>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f2495f34c40>, 6446113.737672445)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f2495c38340>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f249615b3a0>, 6446141.846245974)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f2495c3a5f0>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f2495f356c0>, 6446142.917609846)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f2495c3b550>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f2496158e20>, 6446144.504173292)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f2497c89db0>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f2495f37940>, 6446146.695470449)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f24971fb2e0>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f24968c7340>, 6446147.427145835)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f24966dff10>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f249615b0a0>, 6446149.141919426)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f2495c38490>
+Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7f2495baa260>
+Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7f2495f36860>, 6446150.068743506)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7f24966dc8e0>
+Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7f24a6c25120>
+Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7f24966ddc60>
+Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7f2495e8bc40>
+Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7f249611d210>
+Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7f249611c3d0>
+sys:1: DeprecationWarning: builtin type swigvarlink has no __module__ attribute

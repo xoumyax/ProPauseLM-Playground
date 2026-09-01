@@ -662,9 +662,9 @@ class PolicyTrainerRayProcess(RayProcess):
             model_config.model_name_or_path,
             revision=model_config.model_revision,
             torch_dtype=torch.bfloat16,
-            attn_implementation="flash_attention_2",
-            use_cache=False,
+            attn_implementation="sdpa",
         )
+        self.policy.config.use_cache = False
         disable_dropout_in_model(self.policy)
         self.policy.gradient_checkpointing_enable()
         # AdamOptimizer = DeepSpeedCPUAdam if self.adam_offload else FusedAdam
@@ -733,9 +733,9 @@ class PolicyTrainerRayProcess(RayProcess):
             model_config.model_name_or_path,
             revision=model_config.model_revision,
             torch_dtype=torch.bfloat16,
-            attn_implementation="flash_attention_2",
-            use_cache=False,
+            attn_implementation="sdpa",
         )
+        self.ref_policy.config.use_cache = False
         disable_dropout_in_model(self.ref_policy)
         self.ref_policy, *_ = deepspeed.initialize(model=self.ref_policy, config=ds_config)
         self.ref_policy.eval()
@@ -811,11 +811,17 @@ class PolicyTrainerRayProcess(RayProcess):
         # avoid OOM
         torch.cuda.empty_cache()
         model = self.model.module
-        count, num_params = 0, len(list(model.named_parameters()))
+
+        # Skip multimodal params (vision_tower, audio_tower, etc.) that vLLM doesn't have
+        _SKIP_PREFIXES = ("model.vision_tower.", "model.audio_tower.", "model.embed_vision.", "model.embed_audio.", "model.multi_modal_projector.")
+        broadcast_params = [(n, p) for n, p in model.named_parameters() if not n.startswith(_SKIP_PREFIXES)]
+        num_params = len(broadcast_params)
+
+        count = 0
         refss = []
         if self.args.gather_whole_model:
             with deepspeed.zero.GatheredParameters(model.parameters(), enabled=self.args.deepspeed_stage == 3):
-                for name, param in model.named_parameters():
+                for name, param in broadcast_params:
                     count += 1  # empty_cache at last param
                     # Fire all vllm engines for broadcast
                     if torch.distributed.get_rank() == 0:
@@ -830,7 +836,7 @@ class PolicyTrainerRayProcess(RayProcess):
                     if torch.distributed.get_rank() == 0:
                         torch.distributed.broadcast(param.data, 0, group=self.model_update_group)
         else:  # broadcast each parameter independently
-            for name, param in model.named_parameters():
+            for name, param in broadcast_params:
                 count += 1
                 if torch.distributed.get_rank() == 0:
                     shape = param.shape if self.args.deepspeed_stage != 3 else param.ds_shape
@@ -1185,13 +1191,26 @@ def vllm_generate_thread(
     resume_training_step: int = 1,
     tool_use: bool = False,
 ):
+    def _ensure_int_token_ids(prompts: List) -> List[List[int]]:
+        result = []
+        for q in prompts:
+            if isinstance(q, dict):
+                q = q.get(INPUT_IDS_PROMPT_KEY, q.get("input_ids", []))
+            result.append([int(t) for t in q])
+        return result
+
     def generate_with_engines(prompts: List[List[int]], sampling_params: SamplingParams):
+        prompts = _ensure_int_token_ids(prompts)
         # Split queries between engines
         queries_per_engine = (len(prompts) + len(vllm_engines) - 1) // len(vllm_engines)
         split_queries = [prompts[i : i + queries_per_engine] for i in range(0, len(prompts), queries_per_engine)]
         # Generate responses in parallel across engines
         futures = [
-            vllm_engine.generate.remote(sampling_params=sampling_params, prompt_token_ids=queries, use_tqdm=False)
+            vllm_engine.generate.remote(
+                prompts=[{"prompt_token_ids": q} for q in queries],
+                sampling_params=sampling_params,
+                use_tqdm=False,
+            )
             for vllm_engine, queries in zip(vllm_engines, split_queries)
         ]
         # Gather all responses
@@ -1910,7 +1929,18 @@ def main(args: Args, tc: TokenizerConfig, model_config: ModelConfig, reward_fn: 
         )
         if args.shuffle_eval_dataset:
             eval_dataset = eval_dataset.shuffle(seed=args.seed)
-    visualize_token(train_dataset[0][INPUT_IDS_PROMPT_KEY], tokenizer)
+    try:
+        sample = train_dataset[0]
+        if isinstance(sample, dict) and INPUT_IDS_PROMPT_KEY in sample:
+            token_ids = sample[INPUT_IDS_PROMPT_KEY]
+            if isinstance(token_ids, list) and len(token_ids) > 0 and isinstance(token_ids[0], int):
+                visualize_token(token_ids, tokenizer)
+            else:
+                print(f"Skipping visualize_token: token_ids type={type(token_ids)}, first elem={token_ids[0] if token_ids else 'empty'}")
+        else:
+            print(f"Skipping visualize_token: sample keys={list(sample.keys()) if isinstance(sample, dict) else type(sample)}")
+    except Exception as e:
+        print(f"Skipping visualize_token due to error: {e}")
     if args.cache_dataset_only:
         return
     
